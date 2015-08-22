@@ -1,0 +1,88 @@
+## PROFILE
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+source /usr/local/opt/nvm/nvm.sh
+
+#add Java Home to path
+export JAVA_HOME=$(/usr/libexec/java_home)
+#adapt path for maven integration
+export M2_HOME="/usr/local/apache-maven-3.2.2"
+export PATH=${PATH}:${M2_HOME}/bin
+
+export GRADLE_HOME="/usr/local/gradle-2.0"
+export PATH=${PATH}:${GRADLE_HOME}/bin
+
+#function setjdk() {
+#  if [ $# -ne 0 ]; then
+#   removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
+#   if [ -n "${JAVA_HOME+x}" ]; then
+#    removeFromPath $JAVA_HOME
+#   fi
+#   export JAVA_HOME=`/usr/libexec/java_home -v $@`
+#   export PATH=$JAVA_HOME/bin:$PATH
+#  fi
+# }
+# function removeFromPath() {
+#  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
+# }
+#setjdk 1.7
+
+export PATH=$PATH:/Development/apache-maven-3.2.2/bin
+export MONGO_PATH=/usr/local/mongodb
+export MAVEN_PATH="/Users/agusgambina/Development/apache-maven-3.2.2"
+export ACTIVATOR_PATH="/Users/agusgambina/Downloads/activator-1.2.10-minimal/activator"
+export PATH=$PATH:$MONGO_PATH/bin:$ACTIVATOR_PATH:$MAVEN_PATH/bin
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/usr/local/share/npm/bin:$PATH
+export NODE_PATH=/Users/agusgambina/.node/lib/node_modules/:/Users/agusgambina/.node/lib/node_modules
+
+## BASH_PROFILE
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
+
+export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export EDITOR='subl -w'
+
+export PATH=/usr/local/bin:$PATH
+
+
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+
+export PATH=/usr/local/share/npm/bin:$PATH
+
+##JDK
+function setjdk() {
+  if [ $# -ne 0 ]; then
+   removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
+   if [ -n "${JAVA_HOME+x}" ]; then
+    removeFromPath $JAVA_HOME
+   fi
+   export JAVA_HOME=`/usr/libexec/java_home -v $@`
+   export PATH=$JAVA_HOME/bin:$PATH
+  fi
+ }
+ function removeFromPath() {
+  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
+ }
+setjdk 1.7
+
+## BASHRC
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/usr/local/share/npm/bin:$PATH
+export NODE_PATH=/Users/agusgambina/.node/lib/node_modules/:/Users/agusgambina/.node/lib/node_modules
+
+export NVM_DIR="/Users/agusgambina/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
