@@ -53,7 +53,7 @@ if $SHELL_BASH; then
 fi
 
 if $SHELL_ZSH; then
-  for DOTFILE in "$DOTFILES_DIR"/system/.*.zsh; do
+  for DOTFILE in "$DOTFILES_DIR"/system/zsh/.*.zsh; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
   done
 fi

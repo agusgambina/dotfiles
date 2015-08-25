@@ -9,7 +9,6 @@ EXTRA_DIR="$HOME/.extra"
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 
 # Bunch of symlinks
-
 ln -sfv "$DOTFILES_DIR/system/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/system/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
