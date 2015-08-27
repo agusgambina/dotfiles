@@ -11,6 +11,7 @@ EXTRA_DIR="$HOME/.extra"
 # Bunch of symlinks
 ln -sfv "$DOTFILES_DIR/system/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/system/.inputrc" ~
+ln -sfv "$DOTFILES_DIR/system/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
