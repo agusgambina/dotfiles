@@ -14,6 +14,8 @@ ln -sfv "$DOTFILES_DIR/system/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/system/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
+
 
 # if [ "$(uname)" == "Darwin" ]; then
 #     ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~

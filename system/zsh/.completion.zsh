@@ -1,9 +1,7 @@
 # Source: https://github.com/robbyrussell/oh-my-zsh/tree/master/lib
-
 # Load and run compinit
 autoload -U compinit
 compinit -C
-
 
 unsetopt MENU_COMPLETE
 unsetopt FLOWCONTROL
