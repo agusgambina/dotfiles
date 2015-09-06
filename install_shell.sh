@@ -15,7 +15,8 @@ ln -sfv "$DOTFILES_DIR/system/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
-
+ln -sfv "$DOTFILES_DIR/vim/.nvimrc" ~
+ln -s ~/.vim ~/.nvim ~
 
 # if [ "$(uname)" == "Darwin" ]; then
 #     ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
