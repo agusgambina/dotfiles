@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 
+Plugin 'thoughtbot/vim-rspec'
 
 let g:airline_theme='solarized'
 
@@ -37,4 +38,4 @@ set number
 set tabstop=4
 set shiftwidth=2
 set softtabstop=2
-set expandtab       
+set expandtab
